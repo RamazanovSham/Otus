@@ -1,19 +1,16 @@
 package com.example.otusactivityless
 
-import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Intent
-import android.media.Image
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 
-class SecondActivity:AppCompatActivity() {
+class FilmDetail:AppCompatActivity() {
     companion object {
         const val EXTRA_NAME = "EXTRA_NAME"
         fun launchActivity(activity : Activity, name : String) {
-            Intent(activity, SecondActivity::class.java).apply {
+            Intent(activity, FilmDetail::class.java).apply {
                 putExtra(EXTRA_NAME, name)
                 activity.startActivity(this)
             }
